@@ -9,3 +9,9 @@
 Лог запросов:
 
 `curl --unix-socket /var/run/docker.sock --output <file-to-write> http://localhost:80/containers/<container-id>/logs\?stdout\=1`
+
+При изменении nginx.conf:
+
+`docker kill -s HUP <container-name>`
+
+`docker restart <container-name>`
